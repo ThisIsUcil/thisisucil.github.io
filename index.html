@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NgidoliHub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 100%);
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .build-info {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 300;
+            color: #ccc;
+            letter-spacing: 1px;
+        }
+
+        .build-info .brand {
+            color: #ffdc6b;
+            font-weight: 500;
+        }
+
+        .build-info .version {
+            color: #888;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .build-info {
+                font-size: 16px;
+            }
+            
+            .build-info .version {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .build-info {
+                font-size: 14px;
+            }
+            
+            .build-info .version {
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="build-info">
+        <div>Build by <span class="brand">NgidoliHub</span></div>
+        <div class="version">v22.0.7</div>
+    </div>
+</body>
+</html>
